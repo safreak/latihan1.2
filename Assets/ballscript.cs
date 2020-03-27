@@ -25,7 +25,7 @@ public class ballscript : MonoBehaviour
     }
     IEnumerator wait(){
         sesuatu.velocity = new Vector2(0,0)*speed;
-        GetComponent<Transform>().position = new Vector2(8,0);
+        sesuatu.GetComponent<Transform>().position = new Vector2(8,0);
         yield return new WaitForSeconds(1);
         sesuatu.velocity = new Vector2(-1, -1) * speed;
 
