@@ -48,6 +48,7 @@
      <Compile Include="Assets\ballscript.cs" />
      <Compile Include="Assets\raketkanan.cs" />
      <Compile Include="Assets\raketkiri.cs" />
+     <Compile Include="Assets\textscript.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.3.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

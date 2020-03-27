@@ -20,7 +20,16 @@ public class ballscript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) {
         if(other.collider.name=="WallRight" || other.collider.name=="WallLeft"){
-            GetComponent<Transform>().position = new Vector2(0,0);
+            StartCoroutine(wait());
         }
     }
+    IEnumerator wait(){
+        sesuatu.velocity = new Vector2(0,0)*speed;
+        GetComponent<Transform>().position = new Vector2(8,0);
+        yield return new WaitForSeconds(1);
+        sesuatu.velocity = new Vector2(-1, -1) * speed;
+
+        
+        
+}
 }
