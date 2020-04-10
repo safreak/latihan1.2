@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 
 public class textscript : MonoBehaviour
@@ -27,5 +28,6 @@ public class textscript : MonoBehaviour
         counter  -=1;
         timerText.text = counter.ToString();
     }
+     SceneManager.LoadScene("GameOverScene");
 }
 }
