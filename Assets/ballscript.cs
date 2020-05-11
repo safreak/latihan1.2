@@ -7,6 +7,7 @@ public class ballscript : MonoBehaviour
     //public int speed = 30;
     public Rigidbody2D sesuatu;
     public Animator animatr;
+    public AudioSource hitEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,9 @@ public class ballscript : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) {
         if(other.collider.name=="WallRight" || other.collider.name=="WallLeft"){
             StartCoroutine(wait());
+        }
+        if(other.collider.tag=="Player"){
+            hitEffect.Play();
         }
     }
     IEnumerator wait(){
